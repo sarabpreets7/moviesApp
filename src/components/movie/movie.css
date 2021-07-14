@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.movie-div{
+    display: flex;
+    width: calc(100% - 500px);
+    margin: 25px;
+}
+.movie-image img{
+    width: 200px;
+    height: 280px;
+    margin-right:20px;
+    border: 3px solid gray;
+    border-radius: 9%;
+}
+.movie-title{
+    margin-bottom: 40px;
+    font-size: 30px;
+    
+}
+.description{
+    /* background-color: aliceblue; */
+    height: 50%;
+    width: 170%;
+    font-family: 'Roboto', sans-serif;
+}

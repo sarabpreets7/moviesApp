@@ -1,0 +1,16 @@
+.image{
+    width: 21px;
+    height:19px;
+    margin: 4px;
+    background: transparent;
+}
+.image-star{
+    width: 28px;
+    height:27px;
+    margin: 4px;
+}
+
+.imagee{
+    display: flex;
+    align-items: center;
+}

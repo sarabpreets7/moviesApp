@@ -1,0 +1,16 @@
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 40px;
+    transition: all 0.5s ease;
+    margin-bottom: 15px;
+}
+.sidebar-button:hover{
+    background-color: #3295E8;
+    cursor: pointer;
+}
+.sidebar-button selected{
+    background-color: #3295E8;
+}

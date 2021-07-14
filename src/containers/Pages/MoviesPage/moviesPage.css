@@ -1,0 +1,13 @@
+.movie-page{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #292F37;
+    color: white;
+    font-family: 'Uchen', serif;
+}
+.movies-container{
+    width: calc(100% - 200px);
+    height: calc(100vh - 50px);
+   
+    overflow-y: scroll;
+}

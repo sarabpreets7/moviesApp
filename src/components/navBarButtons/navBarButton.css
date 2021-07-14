@@ -1,0 +1,18 @@
+.navbar-button {
+    height: 100%;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+
+}
+.navbar-button:hover{
+    background-color: #3295E8;
+    cursor: pointer;
+}
+.navbar-button selected{
+    background-color: #3295E8;
+}
