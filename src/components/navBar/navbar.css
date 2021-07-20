@@ -4,8 +4,9 @@
     /* background-color: #279CEC;
     color: white; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     background-color: #565F68;
+    justify-content: flex-start;
 }
 
 img {
