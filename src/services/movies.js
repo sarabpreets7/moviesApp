@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const GetService = async () => {
-    const response = await axios.get("https://endgame.free.beeceptor.com");
+    const response = await axios.get("https://apimovie.free.beeceptor.com/");
     return response.data
 }

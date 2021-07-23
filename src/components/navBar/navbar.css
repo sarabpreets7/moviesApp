@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 .navbar {
     width:100%;
     height:50px;
-    /* background-color: #279CEC;
-    color: white; */
+   
     display: flex;
-    /* align-items: center; */
-    background-color: #565F68;
-    justify-content: flex-start;
+    
+    background-color: rgb(102, 8, 60);
+    
+    z-index: 22;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: white;
+    border-bottom: 2.5px solid black;
+    font-family: lato;
 }
+.title{
+    align-self:center;
+    margin-left: 25%;
+    font-size: 25px;
+    font-family: 'Otomanopee One', sans-serif;
 
+}
 img {
     height:50px;
     background: transparent;

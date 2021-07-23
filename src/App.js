@@ -5,13 +5,16 @@ import NavBar from './components/navBar/navbar';
 import MovieList from './containers/moviesList/moviesList';
 import MoviesPage from "./containers/Pages/MoviesPage/moviePage"
 import HomePage from './containers/Pages/HomePage/homePage';
+
 function App() {
   return (
     <BrowserRouter>
       
       <Switch>       
-        <Route path='/' exact component={HomePage} />
-        <Route path='/movies' exact component={MoviesPage} />
+        <Route path='/sarabpreets7/moviesApp' exact component={HomePage} />
+        <Route path='/sarabpreets7/moviesApp/movies' exact component={MoviesPage} />
+        
+
         
         
       </Switch>

@@ -11,8 +11,8 @@
 }
 .pagination:hover{
     cursor: pointer;
-    background-color: #3295E8;
+    background-color: #f31785;
 }
 .selected{
-    background-color: #3295E8;
+    background-color: #f31785;
 }

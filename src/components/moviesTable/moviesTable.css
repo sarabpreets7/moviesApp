@@ -1,10 +1,11 @@
 .movies-table{
     height: calc(100vh - 270px);
     border:2.5px solid lightgray;
-    background-color: #565F68;
+    background-color: rgb(102, 8, 60);
     color: white;
     width: calc(100vw - 300px);
     transition: all 0.5s ease;
+    opacity: 0.8;
 }
 .tablehead {
     display: flex;

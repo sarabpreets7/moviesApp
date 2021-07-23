@@ -1,6 +1,6 @@
 .navbar-button {
     height: 100%;
-    
+    width:70px;
     padding-left: 10px;
     padding-right: 10px;
     display: inline-flex;
@@ -10,7 +10,7 @@
 
 }
 .navbar-button:hover{
-    background-color: #3295E8;
+    background-color: #f31785;
     cursor: pointer;
 }
 .navbar-button selected{

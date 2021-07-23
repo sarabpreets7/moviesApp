@@ -12,10 +12,12 @@ class NavBar extends React.Component {
         return(
             <div className="navbar">
                 <img  src="https://w7.pngwing.com/pngs/970/565/png-transparent-movie-projector-film-cinema-cine-angle-photography-logo.png"/>
-                <Link className="link" to="/" style={{height:'100%',width:'3.8%',textDecoration: 'none',color:'white',marginLeft:'10px'}}><NavBarButton  onChange={this.props.onChange} text = "Home"></NavBarButton></Link>
+                <Link className="link" to="/sarabpreets7/moviesApp" style={{height:'100%',textDecoration: 'none',color:'white'}}><NavBarButton  onChange={this.props.onChange} text = "Home"></NavBarButton></Link>
                 
-                <Link to="/movies" style={{height:'100%',width:'5.2%',color:'white', textDecoration: 'none',marginLeft:'10px'}}><NavBarButton onChange={this.props.onChange} text = "Movies"></NavBarButton></Link>
+                <Link className="link" to="/sarabpreets7/moviesApp/movies" style={{height:'100%',color:'white', textDecoration: 'none'}}><NavBarButton onChange={this.props.onChange} text = "Movies"></NavBarButton></Link>
                 <NavBarButton onChange={this.props.onChange} text = "About Us"></NavBarButton>
+
+                <div className="title">MOVIES APP</div>
                 
             </div>
         )
