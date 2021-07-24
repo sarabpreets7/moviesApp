@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+.trailer{
+    display: flex;
+    text-align: center;
+    width:calc(100%/5);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.trailer-cont{
+    height:60%;
+    width:55%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    border-radius: 10%;
+    font-family: 'Roboto', sans-serif;
+}

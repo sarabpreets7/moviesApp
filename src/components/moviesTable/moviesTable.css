@@ -5,7 +5,7 @@
     color: white;
     width: calc(100vw - 300px);
     transition: all 0.5s ease;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .tablehead {
     display: flex;

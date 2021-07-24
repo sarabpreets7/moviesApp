@@ -213,8 +213,8 @@ class MoviesPage extends React.Component {
             <div className="main">
             <div className="box">
                  <div>
-                </div><div></div><div></div><div></div><div></div><div>
-                </div><div></div><div></div><div></div><div></div></div>
+                </div><div><img style={{width:'100%',height:'100%'}} src={movies[1].image}/></div><div><img style={{width:'100%',height:'100%'}} src={movies[0].image}/></div><div></div><div><img style={{width:'100%',height:'100%'}} src={movies[2].image}/></div><div>
+                <img style={{width:'100%',height:'100%'}} src={movies[3].image}/></div><div><img style={{width:'100%',height:'100%'}} src={movies[4].image}/></div><div><img style={{width:'100%',height:'100%'}} src={movies[5].image}/></div><div></div><div></div></div>
                 <NavBar></NavBar>
                 {/* <SideBar></SideBar> */}
                 <div className="movies-container">

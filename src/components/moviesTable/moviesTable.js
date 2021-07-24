@@ -14,7 +14,7 @@ class MovieTable extends React.Component {
         let List = [];
         
         for(let i in movies){
-            List.push(<MovieTableRow data={this.props.movies[i]}/>)
+            List.push(<MovieTableRow idx={parseInt(i)} data={this.props.movies[i]}/>)
         }
         return(
             <div>
@@ -23,6 +23,7 @@ class MovieTable extends React.Component {
                 <div className="rowcol column">S.NO</div>
                 <div className="rowcol column">Movie Name</div>
                 <div className="rowcol column">Genre</div>
+                <div className="rowcol column">Trailer</div>
                 <div className="rowcol column">Rating</div>
                 </div>
                 {List}
