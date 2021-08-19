@@ -1,17 +1,19 @@
 .image{
-    width: 21px;
-    height:19px;
-    margin: 4px;
+    width: 10%;
+    height:30%;
+    margin: 2%;
     background: transparent;
 }
 .image-star{
-    width: 26px;
-    height:27px;
-    margin: 4px;
+    width: 12%;
+    height:35%;
+    margin: 2%;
 }
 
 .imagee{
     display: flex;
     align-items: center;
     justify-content: center;
+    height:100%;
+    width:100%
 }

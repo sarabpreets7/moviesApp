@@ -11,6 +11,7 @@
     display: flex;
     border-bottom: 1px solid lightgrey;
     height: calc(100%/6);
+    /* width: calc(100%/6); */
     align-items: center;
     justify-content: space-around;
     font-weight: 600;
@@ -62,3 +63,17 @@
     border-radius: 50%;
     transition: all 0.5s ease;
 }
+
+@media only screen and (max-width: 960px) { 
+    .movies-table {
+        width:60vw
+    }
+      
+ }
+ @media only screen and (max-width: 650px) { 
+    .movies-table {
+        font-size: 0.7rem;
+    }
+      
+ }
+

@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 import { MoviesData } from '../../dataManager';
 import Loader from '../../../components/loader/loader';
 import axios from 'axios';
+import {connect} from 'react-redux';
 class HomePage extends React.Component {
     constructor(props){
         super(props);
@@ -17,7 +18,8 @@ class HomePage extends React.Component {
             pageNumber: 1,
             rating:"all",
             genre: "",
-            loader:false
+            loader:true,
+            max:0
             
 
         }
@@ -25,12 +27,12 @@ class HomePage extends React.Component {
         
     }
     async componentDidMount () {
-        // let data = await MoviesData();
-        // console.log(data);
-        // this.setState({
-        //     data: data,
-        //     loader: false
-        // });
+        let data = await MoviesData();
+       
+        this.setState({
+            data: data,
+            loader: false
+        });
 
         let el = document.getElementById("1");
         if(el){
@@ -92,6 +94,8 @@ class HomePage extends React.Component {
     changePageRight= ()=>{
         
         let element=  document.querySelector(".pagination.selected");
+        if( 1){
+            let number = element.id
                if(element){
                 element.classList.remove("selected")
                }
@@ -99,8 +103,11 @@ class HomePage extends React.Component {
                 ReactDOM.findDOMNode(el).classList.add("selected")
             this.setState({
                 
-                pageNumber: (this.state.pageNumber +1)
+                pageNumber: (this.state.pageNumber +1),
+                
             })
+        }
+        
         
     }
     
@@ -293,7 +300,7 @@ const movies = [{
     "image":"https://static.standard.co.uk/2021/06/02/09/loki_characterseries_loki_v2_lg_79d2bf01.jpg?width=1200&width=1200&auto=webp&quality=75"
 }
 ]
-        let data =movies;
+        let data =this.state.data;
        
         
         
@@ -329,7 +336,12 @@ const movies = [{
         for (let i = (this.state.pageNumber - 1) * 5; i < (this.state.pageNumber * 5) && i < filteredData.length; i++) {
             finalData.push(filteredData[i]);
         }
-        console.log(finalData);
+        // console.log(finalData);
+        // let number =finalData.length
+        // console.log(this.max)
+        // this.setState({
+        //     max:number
+        // })
     
         return(
             
@@ -368,4 +380,16 @@ const movies = [{
     }
     
 }
-export default HomePage
+
+const mapStateToProps = state =>{
+    return{
+        data: state.data
+    }
+}
+
+const mapActionToProps = dispatch =>{
+    return{
+        updatemovies:(data)=> dispatch({type:"updatemovies",data:data})
+    }
+}
+export default connect(mapStateToProps,mapActionToProps)(HomePage)

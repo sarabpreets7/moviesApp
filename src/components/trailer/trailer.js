@@ -12,7 +12,7 @@ class Trailer extends React.Component {
         return(
             <div className="trailer-cont">
                 
-            <a style={{textDecoration:'none',marginLeft:'0px'}} href={this.props.link} className="trailer">
+            <a style={{textDecoration:'none',marginLeft:'0px',height:"95%",width:"100%"}} href={this.props.link} className="trailer">
                 <PlayArrowIcon />
                 Trailer
             </a>

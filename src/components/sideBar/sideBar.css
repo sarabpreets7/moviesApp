@@ -12,3 +12,17 @@
     color: white;
     font-family: lato;
 }
+
+@media only screen and (max-width: 960px) { 
+   .sidebar{
+       width:10rem
+   }
+     
+}
+
+@media only screen and (max-width: 630px) { 
+    .sidebar{
+        width:6rem
+    }
+      
+ }

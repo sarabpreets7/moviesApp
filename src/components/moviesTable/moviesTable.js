@@ -20,11 +20,11 @@ class MovieTable extends React.Component {
             <div>
             <div className="movies-table">
                 <div className="tablehead">
-                <div className="rowcol column">S.NO</div>
-                <div className="rowcol column">Movie Name</div>
-                <div className="rowcol column">Genre</div>
-                <div className="rowcol column">Trailer</div>
-                <div className="rowcol column">Rating</div>
+                    <div className="rowcol column">S.NO</div>
+                    <div className="rowcol column">Movie Name</div>
+                    <div className="rowcol column">Genre</div>
+                    <div className="rowcol column">Trailer</div>
+                    <div className="rowcol column">Rating</div>
                 </div>
                 {List}
                 

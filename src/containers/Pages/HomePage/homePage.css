@@ -31,6 +31,9 @@ input{
     border: 1px solid lightgray;
     
 }
+.main{
+    width: 100vw;
+}
 
 .filter-tab{
     display: flex;
@@ -130,3 +133,10 @@ input{
     transform: scale(1.6) translateY(-250px) rotate(360deg);
     }
     }
+
+    @media only screen and (max-width: 960px) { 
+        .movie-search,.rating-dropdown{
+            height:1.4rem
+        }
+          
+     }

@@ -17,7 +17,7 @@ class MovieTableRow extends React.Component {
                 <div className="rowcol column">{name}</div>
                 <div className="rowcol column">{genre}</div>
                 <div className="rowcol column"><Trailer link={this.props.data.trailer}/></div>
-                <div className="rowcol column"><Rating stars={rating}></Rating></div>
+                <div className="rowcol column stars" id="star"><Rating stars={rating}></Rating></div>
             </div>
         )
     }
